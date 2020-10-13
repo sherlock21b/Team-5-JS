@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Team 5 Assignment-2</title>
+        <link rel="stylesheet" href="team5.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <u><h1>Team 5 Assignment-2</h1></u>
+        <br>
+        <div>
+            <h3>Program 1</h3>
+            <p id="day"></p>
+            <p id="time"></p>
+        </div>
+        <br />
+        <div>
+            <h3>Program 2</h3>
+
+            <form>
+                1st Number: <input type="number" id="num_1" /> 
+                <br>
+                <br>
+                2nd Number: <input type="number" id="num_2" />
+                <input type="button" onClick="multiply()" value="Multiply" />
+                <input type="button" onClick="divide()" value="Divide" />
+            </form>
+            <p>
+                The Result is : <br />
+                <span id="result"></span>
+            </p>
+        </div>
+        <br />
+        <div>
+            <h3>Program 3</h3>
+            <form>
+                Enter String: <input type="text" id="full_string" />
+                <input type="button" onClick="removeDuplicateCharacters(document.getElementById('full_string').value)" value="Delete Duplicate" />
+            </form>
+            <br />
+            <p>The String without duplicates is: <span id="not_full_string"></span></p>
+        </div>
+        <br />
+        <div>
+            <h3>Program 4</h3>
+            <form>Enter Array: <input type="button" onClick="array_stuff()" value="Calculate" /></form>
+            <br />
+            <p>The Calculations are: <span id="array_ans"></span></p>
+        </div>
+        <br />
+        <div>
+            <h3>Program 5</h3>
+            <form>Enter String: <input type="button" onClick="subset()" value="Find Subsets" /></form>
+            <br />
+            <p>The Subsets are: <span id="subset_ans"></span></p>
+        </div>
+        <script src="team5.js"></script>
+    </body>
+</html>
